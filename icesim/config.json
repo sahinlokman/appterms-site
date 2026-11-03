@@ -1,0 +1,11 @@
+{
+  "interstitialFirstLevel": 3,
+  "interstitialCooldown": 30,
+  "reviewMinLevel": 5,
+  "reviewCooldownDays": 90,
+  "bonusEvery": 5,
+  "analyticsEnabled": false,
+  "eventEnabled": true,
+  "eventStart": "12-01",
+  "eventEnd": "01-06"
+}
