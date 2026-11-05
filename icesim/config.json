@@ -15,6 +15,6 @@
   "coinVideosPerDay": 3,
   "analyticsEnabled": false,
   "eventEnabled": true,
-  "eventStart": "12-01",
+  "eventStart": "11-01",
   "eventEnd": "01-06"
 }
