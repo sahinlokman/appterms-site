@@ -1,0 +1,45 @@
+/* Skate Flick site: the in-game "Session" skin. Fonts are self-hosted (SIL OFL, see fonts/), no third-party requests. */
+@font-face { font-family: "Barlow"; src: url("fonts/Barlow-Medium.ttf") format("truetype"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Barlow"; src: url("fonts/Barlow-SemiBold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Barlow Condensed"; src: url("fonts/BarlowCondensed-BlackItalic.ttf") format("truetype"); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Lilita One"; src: url("fonts/LilitaOne-Regular.ttf") format("truetype"); font-display: swap; }
+
+:root {
+  --red: #E5322D; --red-deep: #B8211E; --ink: #0E1116; --chip: #1C222C; --line: #2B3341;
+  --fog: #9AA3B2; --text: #E8ECF2; --white: #FFFFFF;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--ink); color: var(--text); font: 500 17px/1.6 "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--white); text-decoration-color: var(--red); text-underline-offset: 3px; }
+a:hover { color: var(--red); }
+
+.band { position: relative; overflow: hidden; background: var(--red); padding: 28px 16px 44px; }
+.band::after { content: ""; position: absolute; left: -10%; right: -10%; top: 46%; height: 46%; background: var(--red-deep); opacity: .45; transform: rotate(-4deg); }
+.band > * { position: relative; z-index: 1; }
+.band-inner { max-width: 760px; margin: 0 auto; }
+.logo { font-family: "Lilita One", sans-serif; font-size: 34px; line-height: 1; color: var(--white); text-decoration: none; letter-spacing: .5px; }
+.logo:hover { color: var(--white); }
+.band h1 { margin: 18px 0 0; font: italic 900 44px/1.02 "Barlow Condensed", sans-serif; text-transform: uppercase; color: var(--white); }
+.band p { margin: 8px 0 0; color: #FFE3E1; }
+
+nav.links { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 18px; }
+nav.links a { padding: 6px 14px; border-radius: 999px; background: rgba(14, 17, 22, .82); color: var(--white); text-decoration: none; font: italic 900 15px/1.4 "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .4px; }
+nav.links a[aria-current="page"], nav.links a:hover { background: var(--white); color: var(--red); }
+
+main { max-width: 760px; margin: 0 auto; padding: 28px 16px 56px; }
+h2 { margin: 36px 0 8px; font: italic 900 26px/1.1 "Barlow Condensed", sans-serif; text-transform: uppercase; color: var(--white); }
+h2::before { content: ""; display: inline-block; width: 18px; height: 14px; margin-right: 10px; background: var(--red); transform: skewX(-18deg); }
+h3 { margin: 22px 0 4px; font-weight: 600; font-size: 18px; color: var(--white); }
+p, li { color: var(--text); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.meta { color: var(--fog); font-size: 15px; }
+.card { margin: 18px 0; padding: 16px 18px; border-radius: 14px; background: var(--chip); border: 1px solid var(--line); }
+.card p:first-child { margin-top: 0; } .card p:last-child { margin-bottom: 0; }
+table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { color: var(--fog); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+footer { max-width: 760px; margin: 0 auto; padding: 0 16px 40px; color: var(--fog); font-size: 14px; }
+@media (max-width: 480px) { .band h1 { font-size: 36px; } h2 { font-size: 23px; } }
